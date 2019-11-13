@@ -10,9 +10,9 @@ manager. For example, ```apt-get -y install git``` or ```yum -y install git```.
 
 Read [Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for more information.
 
-Note that all the examples in this GitBook will be using Git *on the command line*. You will use ```command.exe``` or powershell (your choice) in Windows, Terminal in OS X, or any terminal emulator in Linux.
+Note that all the examples in this tutorial will be using Git *on the command line*. You will use ```command.exe``` or powershell (your choice) in Windows, Terminal in OS X, or any terminal emulator in Linux.
 
-# Ensure a compatible of R is installed.
+# Ensure a compatible version of R is installed.
 You should have R and optionally RStudio installed. Shiny at IQSS
 supports R 3.5.x to 3.6.x. If you're using R < 3.5.x, upgrade now
 as there is no guarantee that code built for R < 3.5.x will function
