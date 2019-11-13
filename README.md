@@ -2,9 +2,9 @@
 
 IQSS provides Shiny application hosting to Harvard and it's affiliates. If you  have an R Shiny app you want to host with us, read on!
 
-R Shiny application hosting is provided through [https://www.heroku.com](Heroku), a platform as a service (PaaS) for web development. IQSS has developed a [Shiny integration for Heroku](https://github.com/hmdc/heroku-docker-r), extending the same Git centered approach Heroku uses for web application development in NodeJS, Scala, or Java to R.
+R Shiny application hosting is provided through [Heroku](https://www.heroku.com), a platform as a service (PaaS) for web development. IQSS has developed a [Shiny integration for Heroku](https://github.com/hmdc/heroku-docker-r), extending the same Git centered approach Heroku uses for web application development in NodeJS, Scala, or Java to R.
 
-There are some differences between IQSS Shiny application hosting and what you may be used to with [https://rstudio.com/products/connect/](RStudio Connect) or [https://www.shinyapps.io/](ShinyApps), RStudio's PaaS.
+There are some differences between IQSS Shiny application hosting and what you may be used to with [RStudio Connect](https://rstudio.com/products/connect/) or [ShinyApps.io](https://www.shinyapps.io/), RStudio's PaaS.
 
 The following may not be immediately helpful, but, as you progress through the tutorial, the differences highlighted below will become apparent as you encounter them while executing R Shiny deployment workflows.
 

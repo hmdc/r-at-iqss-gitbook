@@ -21,6 +21,7 @@
 - [Best Practices](bestpractices/README.md)
   - [File storage](bestpractices/FileStorage.md)
   - [Using promises](bestpractices/UsingPromises.md)
+  - [Adding routes](bestpractices/Routes.md)
 - [Troubleshooting](troubleshooting/README.md)
   - [Viewing app logs](troubleshooting/ViewAppLogs.md)
   - [Viewing resource consumption](troubleshooting/ViewResourceConsumption.md)
