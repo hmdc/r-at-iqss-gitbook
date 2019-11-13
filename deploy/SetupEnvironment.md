@@ -1,4 +1,16 @@
-# Install a compatible R version installed.
+# Install Git
+There are multiple Git clients available. Install one or install many.
+Listed below are some of our top picks.
+
+- [Windows](https://git-scm.com/download/win)
+- [Mac](https://git-scm.com/download/mac)
+
+If you're using Linux, install Git through your distribution's package
+manager. For example, ```apt-get -y install git``` or ```yum -y install git```.
+
+Read [Getting Started - Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for more information.
+
+# Ensure a compatible of R is installed.
 You should have R and optionally RStudio installed. Shiny at IQSS
 supports R 3.5.x to 3.6.x. If you're using R < 3.5.x, upgrade now
 as there is no guarantee that code built for R < 3.5.x will function
