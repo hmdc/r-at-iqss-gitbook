@@ -14,10 +14,15 @@ Enter the following into the R Console.
 {% endhint %}
 
 # Install Docker
-This step is optional, but, *highly reccomended*. While you don't need Docker to deploy your Shiny applications to Heroku or develop them locally, using Docker you'll be able
-to view your application locally just as it will appear in production. With Docker, you can confirm that code which works locally in your development environment will work in Heroku.
+This step is optional, but, *highly reccomended*. While you don't need Docker to deploy your Shiny applications to Heroku or develop applications locally, using Docker you'll be able run your Shiny application with the exact same tooling and libraries as in production.
 
-You can download Docker for Windows, OS X, or Linux.
+You can download Docker for Windows, OS X, or Linux. 
+- [Mac](https://docs.docker.com/docker-for-mac/install/)
+- [Windows](https://docs.docker.com/docker-for-windows/install/)
+
+Alternatively, if using OS X, you can use [brew](https://brew.sh/) to install docker.
+
+```brew cask install docker```
 
 # Install Heroku
 You will need the Heroku CLI in order to properly configure and deploy your R Shiny application. 
