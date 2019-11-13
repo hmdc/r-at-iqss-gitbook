@@ -16,7 +16,6 @@
   - [Setting up a custom domain for your Shiny app](config/CustomDomain.md)
   - [Limiting the number of R Threads](config/NumRThreads.md)
   - [Installing additional system-level packages](config/AddSystemPackages.md)
-  - [Configuring Shiny session auto-reconnect](troubleshooting/Autoreconnect.md)
 - [Best Practices](bestpractices/README.md)
   - [File storage](bestpractices/FileStorage.md)
   - [Using promises](bestpractices/UsingPromises.md)
