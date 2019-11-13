@@ -2,7 +2,7 @@ If your onboarding application has been approved, you should have access to Hero
 
 {% hint style="info" %}
 Always use the [Login to Heroku](https://sso.heroku.com/saml/g-harvard/init). Do not make your own account on Heroku by mistake. Only accounts authenticated through Harvard Key will have access to the ```g-harvard``` team.
-{% endhint }
+{% endhint %}
 
 If you see a dashboard like the one pictured below, you're good. Continue to the next section. You will learn how to setup your environment and deploy an example R Shiny application to Heroku.
 
