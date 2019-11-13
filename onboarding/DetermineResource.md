@@ -13,15 +13,21 @@ While we prefer to reduce your application's footprint, we understand that some 
 
 ## For Windows
 * Run your Shiny application locally through RStudio or the command line
-* Open the Activity Monitor
-* Look for R.exe
-* How much memory is it?
+* [Open the Task Manager](https://www.howtogeek.com/66622/stupid-geek-tricks-6-ways-to-open-windows-task-manager/).
+* Look for ```R.exe``` or ```rsession.exe```.
+* How much memory is being used?
 
 ## For OS X
-* Run your Shiny application locally through RStudio or the command line
-* Open the Activity Monitor
-* Look for R.exe
-* How much memory is it?
+* Run your Shiny application locally through RStudio or the command line.
+* Open the Activity Monitor. Typing "Activity" in Spotlight, accessed by clicking
+the magnifying class in the upper-right hand corner, should immediately show Activity Monitor as a top hit. 
+![Open the activity monitor](../images/open-os-x-activity-monitor.png)
+* Look for ```R``` or ```rsession```.
+* How much memory is being used?
 
 ### Example
 ![Determining memory usage of an R Shiny application in OS X](../images/r-memory-os-x.png)
+
+
+# My app uses over 512 MB of ram. Can I still apply?
+Continue with the onboarding process. RStudio does add some overhead compared to the vanilla R runtime which is used on Heroku. If your app is using substantially over 512 MB, continue with the onboarding process but be aware that you will most likely need to make substantial optimizations to your R code. We can also point you in the right direction to in-person R programming assistance on campus.
