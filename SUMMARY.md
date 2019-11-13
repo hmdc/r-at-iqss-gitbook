@@ -1,7 +1,7 @@
 # Table of contents
 
 - [Introduction](README.md)
-- [Onboarding](onboarding/README.md)
+- [Getting started](onboarding/README.md)
   - [Prerequisites](onboarding/Prerequisites.md)
   - [Determining your resource requirements](onboarding/DetermingResources.md)
   - [Applying for an account](onboarding/ApplyForAnAccount.md)
