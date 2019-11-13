@@ -22,3 +22,6 @@ While we prefer to reduce your application's footprint, we understand that some 
 * Open the Activity Monitor
 * Look for R.exe
 * How much memory is it?
+
+### Example
+![Determining memory usage of an R Shiny application in OS X](../images/r-memory-os-x.png)
