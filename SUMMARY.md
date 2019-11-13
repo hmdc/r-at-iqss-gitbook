@@ -13,7 +13,7 @@
   - [Developing locally using Docker](deploy/DevelopLocallyWithDocker.md)
   - [Using Packrat for dependency management](deploy/UsingPackrat.md)
   - [Migrating a pre-existing Shiny app](deploy/MigratingPreexistingApp.md)
-- [Configuration][config/README.md]
+- [Configuration](config/README.md)
   - [Setting up a custom domain for your Shiny app](config/CustomDomain.md)
   - [Limiting the number of R Threads](config/NumRThreads.md)
   - [Installing additional system-level packages](config/AddSystemPackages.md)
