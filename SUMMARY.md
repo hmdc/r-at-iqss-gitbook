@@ -25,3 +25,4 @@
   - [Viewing app logs](troubleshooting/ViewAppLogs.md)
   - [Viewing resource consumption](troubleshooting/ViewResourceConsumption.md)
   - [Configuring Shiny session auto-reconnect](troubleshooting/Autoreconnect.md)
+  - [Getting support](troubleshooting/GettingSupport.md)
