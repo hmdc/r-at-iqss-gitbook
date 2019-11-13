@@ -14,8 +14,8 @@ The following may not be immediately helpful, but, as you progress through the t
 * We do not provide any data storage for your application's static assets -- images, CSV(s), or data files. However, you can easily provision an [S3 bucket](https://elements.heroku.com/addons/bucketeer) through Heroku to house such files.
 
 ## What's supported
-* Unlike ShinyApps.io, you can assign a custom SSL enabled domain to you Shiny web application.
-* Your Shiny app is always available, unlike ShinyApps.io where applications are served on an on-demand basis.
+* You can assign a custom SSL enabled domain to your Shiny web application.
+* Your Shiny app is always available.
 * You can install system level libraries by adding an ```Aptfile``` to your repository and specifying which [Ubuntu 18.04](https://packages.ubuntu.com) compatible packages to install. The CRAN [bionic-cran35](https://cran.r-project.org/bin/linux/ubuntu/) apt repository is pre-installed. 
 * You can provision databases for your R Shiny application like Redis, Postgresql, and MariaDB with one click.
 * We provide support for R versions 3.5.x to 3.6.x, with Microsoft R Open (Revolution R) support in the works. See [hmdc/heroku-docker-r#4](https://github.com/hmdc/heroku-docker-r/issues/4) for more details.
