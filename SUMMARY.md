@@ -2,7 +2,7 @@
 
 - [Introduction](README.md)
 - [Getting started](onboarding/README.md)
-  - [Determining your resource requirements](onboarding/DetermingResources.md)
+  - [Determining your resource requirements](onboarding/DetermineResource.md)
   - [Applying for an account](onboarding/ApplyForAnAccount.md)
 - [Deploying](deploy/README.md)
   - [Setup your environment](deploy/SetupEnvironment.md)
