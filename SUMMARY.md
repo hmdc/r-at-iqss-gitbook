@@ -1,4 +1,16 @@
 # Table of contents
 
-* [Initial page](README.md)
-
+- [Introduction](README.md)
+- [Onboarding](onboarding/README.md)
+  - [Prerequisites](onboarding/Prerequisites.md)
+  - [Determining your resource requirements](onboarding/DetermingResources.md)
+  - [Applying for an account](onboarding/ApplyForAnAccount.md)
+- [Deploying](deploy/README.md)
+  - [Setup your environment](deploy/SetupEnvironment.md)
+  - [Deploying an example Shiny app](deploy/DeployShinyExample.md)
+  - [Using the Shiny example as a tempate](deploy/UseShinyExampleAsTemplate.md)
+  - [Developing locally with RStudio](deploy/DevelopLocallyWithRStudio.md)
+  - [Developing locally using Docker](deploy/DevelopLocallyWithDocker.md)
+  - [Using Packrat for dependency management](deploy/UsingPackrat.md)
+  - [Migrating a pre-existing Shiny app](deploy/MigratingPreexistingApp.md)
+- [Best Practices](bestpractices/README.md)
