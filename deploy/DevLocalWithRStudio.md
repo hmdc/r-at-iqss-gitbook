@@ -9,6 +9,7 @@ project in RStudio select *Version Control*
 ![When creating a new project, select project from version control.](../images/select-version-control.png)
 ![Enter the details of your Git repository](../images/clone-git-repo.png)
 
+## Enable Packrat
 Click **Tools** → **Project Options** → **Packrat**. 
 
 Make sure that the following checkboxes are all selected. This will speed up your deployment process after the initial deploy.
@@ -21,3 +22,14 @@ Make sure that the following checkboxes are all selected. This will speed up you
 ![Your Packrat options should look like this](../images/packrat-options.png)
 
 ## From scratch
+
+When creating a project from scratch in RStudio, make sure the following options are selected.
+
+* ✔️ Create a git repository
+* ✔️ Use packrat with this project
+
+![Your project options should look like this](../images/project-options.png)
+
+# Migrating an existing project
+
+Open your project normally as you would through RStudio and enable Packrat, following the above instructions for enabling Packrat support in a project.
