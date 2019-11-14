@@ -10,6 +10,7 @@
   - [Using the Shiny example as a tempate](deploy/UseShinyExampleAsTemplate.md)
   - [Developing locally with RStudio](deploy/DevelopLocallyWithRStudio.md)
   - [Developing locally using Docker](deploy/DevelopLocallyWithDocker.md)
+  - [Speeding up deployments](deploy/SpeedingUp.md)
   - [Using Packrat for dependency management](deploy/UsingPackrat.md)
   - [Migrating a pre-existing Shiny app](deploy/MigratingPreexistingApp.md)
 - [Configuration](config/README.md)
