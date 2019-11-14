@@ -52,6 +52,19 @@ Run ```git push heroku```
 You'll see a lot of logs. Heroku is building and packaging ```heroku-docker-r-example-app```. Following successful deployment, which may take
 up to twenty minutes, you'll be returned an URL for your app.
 
+You can actually press Ctrl+C and detach from the deployment process and it will continue deploying. No need to keep watch, although it is useful. At any time,
+you can view the build logs for $APPLICATION by running
+
+```
+heroku logs -a $APPLICATION
+```
+
+You can also follow the log so any log updates are printed to the console.
+
+```
+heroku logs -a $APPLICATION -t
+```
+
 There are ways to speed up deployments explored in [Speeding up deployments](deploy/SpeedingUp.md). These steps are unnecessary, but, very hepful.
 
 ## View your application
