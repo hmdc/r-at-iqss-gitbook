@@ -17,6 +17,9 @@ cd heroku-docker-r-example-app
 # Login to Heroku on the command line
 Run ```heroku login```. This will open a browser window. Make sure to click *Login via SSO* entering g-harvard as the SSO name, as shown in the screenshots below.
 
+![Click Login via SSO](../images/click-login-via-sso.png)
+![Enter g-harvard on the next screen](../images/enter-g-harvard-sso.png)
+
 # Deploy the application to Heroku
 You are now logged into Heroku via the CLI and can deploy the Shiny application you just cloned locally to Heroku.
 
@@ -65,7 +68,7 @@ You can also follow the log so any log updates are printed to the console.
 heroku logs -a $APPLICATION -t
 ```
 
-There are ways to speed up deployments explored in [Speeding up deployments](deploy/SpeedingUp.md). These steps are unnecessary, but, very hepful.
+There are ways to speed up deployments explored in [Speeding up deployments](SpeedingUp.md). These steps are unnecessary, but, very hepful.
 
 ## View your application
 Click the link returned in the log output. If you see the R Shiny app pictured above, it worked! Keep reading to learn how to deploy **your own Shiny** app, whether you're building an entirely new app or migrating an application previously running on ShinyApps.io, RStudio Connect, or locally.
