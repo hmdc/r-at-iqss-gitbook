@@ -38,13 +38,15 @@ FROM hmdc/heroku-docker-r:3.5.1-shiny
 
 # Caveats
 
-If you're familar with [Packrat](https://rstudio.github.io/packrat/) and already use it, great. If not, Packrat is a R library dependency management tool which
+If you're familar with [Packrat](https://rstudio.github.io/packrat/) and use it, you're in good shape. If not, Packrat is a R library dependency management tool which
 automatically downloads and builds all libraries required for your application. The
 R Shiny IQSS toolchain automatically installs Packrat when you deploy your application. No additional steps are necessary. 
 
 However, in order for your application to work properly in Heroku, you must ensure that:
 
-1. You do not use ```install.packages()``` anywhere in your code. This will cause R to install packages during application runtime, rather than before the application is launched. There is one exception to this rule when installing libraries from GitHub, explained below.
+1. You do not use ```install.packages()``` anywhere in your code. This will cause R to install packages during application runtime, rather than before the application is launched. There is one exception to this rule when installing libraries from GitHub, explained in #3.
 
-2. All your R libraries required with ```library()``` exist in [CRAN](https://cran.r-project.org/web/packages/). If you're installing custom packages from GitHub using the ```devtools``` library, add an ```init.R``` file to your repository and move these installation functions to ```init.R```. All instructions in this file will be executed during the build process, before your application goes live.
+2. All your R libraries required with ```library()``` exist in [CRAN](https://cran.r-project.org/web/packages/). 
+
+3. If you're installing custom R packages from GitHub using the ```devtools``` library, add an ```init.R``` file to your repository and move these installation functions to ```init.R```. All instructions in this file will be executed during the build process, before your application goes live.
 
