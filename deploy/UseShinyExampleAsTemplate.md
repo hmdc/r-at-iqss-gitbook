@@ -18,6 +18,24 @@ Migrating a pre-existing R Shiny application requires a few more steps. The foll
 
 Clone the newly created repository and add your pre-existing code.
 
+# Selecting the version of R to use
+The [heroku-docker-r-example-app](https://github.com/hmdc/heroku-docker-r-example-app) template defaults to using R 3.6.1.
+
+The [Dockerfile](https://github.com/hmdc/heroku-docker-r-example-app/blob/master/Dockerfile) determines which version of R is used for your code in Heroku.
+
+```
+FROM hmdc/heroku-docker-r:3.6.1-shiny
+```
+
+If you use a diferent version of R, replace 3.6.1 with the desired version of R.
+At present, we support R 3.5.x to 3.6.1.
+
+If you want to use R 3.5.1, your Dockerfile should look like
+
+```
+FROM hmdc/heroku-docker-r:3.5.1-shiny
+```
+
 # Caveats
 
 If you're familar with [Packrat](https://rstudio.github.io/packrat/) and already use it, great. If not, Packrat is a R library dependency management tool which
@@ -28,5 +46,5 @@ However, in order for your application to work properly in Heroku, you must ensu
 
 1. You do not use ```install.packages()``` anywhere in your code. This will cause R to install packages during application runtime, rather than before the application is launched. There is one exception to this rule when installing libraries from GitHub, explained below.
 
-2. All your R libraries required with ```library()``` exist in [CRAN](https://cran.r-project.org/web/packages/). If you're installing custom packages from GitHub using the ```devtools``` library, add an ```init.R``` file to your repository and move these installation functions to ```init.R```. This will be executed before your application goes live.
+2. All your R libraries required with ```library()``` exist in [CRAN](https://cran.r-project.org/web/packages/). If you're installing custom packages from GitHub using the ```devtools``` library, add an ```init.R``` file to your repository and move these installation functions to ```init.R```. All instructions in this file will be executed during the build process, before your application goes live.
 
