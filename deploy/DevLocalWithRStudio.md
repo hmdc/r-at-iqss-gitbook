@@ -13,12 +13,11 @@ Click **Tools** → **Project Options** → **Packrat**.
 
 Make sure that the following checkboxes are all selected. This will speed up your deployment process after the initial deploy.
 
-* Use packrat with this project
-* Automatically snapshot local changes
-* Git ignore packrat library
-* Git ignore packrat sources
+* ✔️ Use packrat with this project
+* ✔️ Automatically snapshot local changes
+* ✔️ Git ignore packrat library
+* ✔️ Git ignore packrat sources
 
-Your Packrat options should look like this:
-![When creating a new project, select project from version control.](../images/packrat-options.png)
+![Your Packrat options should look like this](../images/packrat-options.png)
 
 ## From scratch
