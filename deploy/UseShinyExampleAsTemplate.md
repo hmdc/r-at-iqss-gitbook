@@ -14,7 +14,11 @@ You can now begin development using the IDE of your choice.
 
 Go to [heroku-docker-r-example-app](https://github.com/hmdc/heroku-docker-r-example-app) and generate a new repository using _Use this template_.
 
-Migrating a pre-existing R Shiny application requires a few more steps. The following workflow is our preferred and supported method, but, for the adventurous, all you need is the `Dockerfile` and `heroku.yml` from the repository.
+Migrating a pre-existing R Shiny application requires a few more steps. The following workflow is our preferred and supported method, but, for the adventurous, all you need is the `Dockerfile`, `heroku.yml` and `run.R` files from the repository. 
+
+{% hint style="warning" %}
+You *must* have run.R present in any Shiny project for it to run on Heroku
+{% endhint %}
 
 Clone the newly created repository and add your pre-existing code.
 
