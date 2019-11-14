@@ -68,7 +68,7 @@ You can also follow the log so any log updates are printed to the console.
 heroku logs -a $APPLICATION -t
 ```
 
-There are ways to speed up deployments explored in [Speeding up deployments](SpeedingUp.md). These steps are unnecessary, but, very hepful.
+There are ways to speed up deployments explored in [Speeding up deployments]. These steps are unnecessary, but, very hepful.
 
 ## View your application
 Click the link returned in the log output. If you see the R Shiny app pictured above, it worked! Keep reading to learn how to deploy **your own Shiny** app, whether you're building an entirely new app or migrating an application previously running on ShinyApps.io, RStudio Connect, or locally.
