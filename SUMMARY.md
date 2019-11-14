@@ -8,7 +8,7 @@
   - [Setup your environment](deploy/SetupEnvironment.md)
   - [Deploying an example Shiny app](deploy/DeployShinyExample.md)
   - [Bootstrapping a new Shiny app or migrating a pre-existing Shiny application](deploy/UseShinyExampleAsTemplate.md)
-  - [Developing locally with RStudio](deploy/DevelopLocallyWithRStudio.md)
+  - [Developing locally with RStudio](deploy/DevLocalWithRStudio.md)
   - [Developing locally using Docker](deploy/DevelopLocallyWithDocker.md)
   - [Speeding up deployments](deploy/UsingPackrat.md)
   - [Using Packrat for dependency management](deploy/UsingPackrat.md)
