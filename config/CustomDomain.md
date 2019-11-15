@@ -17,7 +17,11 @@ In the Heroku dashboard, go to your app and click on the *Settings* tab, picture
 
 Scroll down and click on *Configure SSL*.
 
+![Click the Configure SSL button](../images/configure-ssl.png)
+
 Select *Automatic* if you're not bringing your own custom SSL certificates, or *Manually* if you are. Continue through the screens as shown below until you're brought back to the settings page.
+
+![Select automatic or manual. You most likely want to select Automatic.](../images/ssl-automatic-or-manual.png)
 
 Now, you're ready to configure your custom domain.
 
