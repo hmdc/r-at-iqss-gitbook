@@ -9,11 +9,13 @@ There are some differences between IQSS Shiny application hosting and what you m
 The following may not be immediately helpful, but, as you progress through the tutorial, the differences highlighted below will become apparent as you encounter them while executing R Shiny deployment workflows.
 
 ## What's not supported
+
 * You can deploy apps to ShinyApps.io or RStudio Connect directly through RStudio. At this time, you can only deploy R applications to Heroku using Git and the Heroku command line interface (cli.)
 * You are, by default, limited to 512 megabytes of ram in use per app, although we are flexible and can issue memory limit increases if necessary. Most applications should strive to run under 512 MiB of ram.
 * We do not provide any data storage for your application's static assets -- images, CSV(s), or data files. However, you can easily provision an [S3 bucket](https://elements.heroku.com/addons/bucketeer) through Heroku to house such files.
 
 ## What's supported
+
 * You can assign a custom SSL enabled domain to your Shiny web application.
 * Your Shiny app is always available.
 * You can install system level libraries by adding an ```Aptfile``` to your repository and specifying which [Ubuntu 18.04](https://packages.ubuntu.com) compatible packages to install. The CRAN [bionic-cran35](https://cran.r-project.org/bin/linux/ubuntu/) apt repository is pre-installed. 
