@@ -1,6 +1,6 @@
 # Best Practices
 
-Building websites in R is often counter-intuitive. R is not a natural web programming language like NodeJS. However, recent additions to R can make it more performant under certain conditions.
+Building websites in R is often counter-intuitive. R is not a natural web programming language like NodeJS. However, recent additions to R can make your Shiny web application more performant under certain conditions.
 
 This section will explore:
 
