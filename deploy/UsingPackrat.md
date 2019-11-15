@@ -21,26 +21,19 @@ In the R console, run
 R version 3.6.1 (2019-07-05) -- "Action of the Toes"
 Copyright (C) 2019 The R Foundation for Statistical Computing
 Platform: x86_64-apple-darwin15.6.0 (64-bit)
-                                                      
+
 R is free software and comes with ABSOLUTELY NO WARRANTY.
 You are welcome to redistribute it under certain conditions.
 Type 'license()' or 'licence()' for distribution details.
-                                                      
-  Natural language support but running in an English locale
-                                                      
+
 R is a collaborative project with many contributors.
 Type 'contributors()' for more information and
 'citation()' on how to cite R or R packages in publications.
-                                                      
+
 Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.     
-                                                      
-> local({                 
-+   r <- getOption("repos")
-+   r["CRAN"] <- "http://cran.cnr.berkeley.edu/"
-+   options(repos = r)    
-+ })                      
+Type 'q()' to quit R.
+
 > install.packages("packrat")
 trying URL 'http://cran.cnr.berkeley.edu/bin/macosx/el-capitan/contrib/3.6/packrat_0.5.0.tgz'
 Content type 'application/x-gzip' length 456629 bytes (445 KB)
@@ -55,13 +48,14 @@ Initializing packrat project in directory:
 - "~/projects/heroku-docker-r-example-app"
 
 Adding these packages to packrat:
-                _         
+                _
     BH            1.69.0-1
-    R6            2.4.1   
-    Rcpp          1.0.3   
-    assertthat    0.2.1   
-    backports     1.1.5   
+    R6            2.4.1
+    Rcpp          1.0.3
+    assertthat    0.2.1
+    backports     1.1.5
 ```
+
 After your project's dependencies are installed, run the following from the same R console
 
 ```R
