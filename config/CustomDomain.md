@@ -41,4 +41,4 @@ Underneath the *Configure SSL* button, click **Add domain**.
 
 ## Adding a DNS CNAME entry
 
-Most domain registration services  - GoDaddy, Google Domains, Hover - have their own DNS service. Create a ```CNAME``` from your domain to the returned DNS target. After fiteen minutes, depending on DNS refresh rate, your custom domain should be accessible and display your app when visited.
+Most domain registration services  - GoDaddy, Google Domains, Hover - have their own DNS service. Create a ```CNAME``` DNS entry from your domain to the returned DNS target. After fiteen minutes, depending on DNS refresh rate, your custom domain should be accessible and display your app when visited.
