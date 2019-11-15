@@ -20,6 +20,7 @@
   - [Using promises](bestpractices/UsingPromises.md)
   - [Adding routes](bestpractices/Routes.md)
 - [Troubleshooting](troubleshooting/README.md)
+  - [Resolving Application Error screen](troubleshooting/ApplicationError.md)
   - [Viewing app logs](troubleshooting/ViewAppLogs.md)
   - [Viewing resource consumption](troubleshooting/ViewResourceConsumption.md)
   - [Configuring Shiny session auto-reconnect](troubleshooting/Autoreconnect.md)
