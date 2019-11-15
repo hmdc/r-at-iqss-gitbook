@@ -1,12 +1,12 @@
 # Using Promises
 
-As explained in [Limiting the number of R Threads](../config/NumRThreads.md), R is single-threaded, unless it's not.
+As explained in [Limiting the number of R Threads](../config/NumRThreads.md), R is single-threaded.
 
-While our Shiny toolchain optimizes your application by running multiple R processes, using promises will maximize your performance far greater than balancing between multiple R processes.
+While our Shiny toolchain optimizes your application by running multiple R processes, using promises will maximize your performance far greater than our balancing between multiple R processes.
 
 ## What is asynchronous programming?
 
-Synchronus programming progresses linearly through code executions. The following reads a CSV from the included URL.
+Synchronus code executes linearly. The following reads a CSV from the included URL.
 
 ```R
 value <- read.csv("http://example.com/data/data.csv")

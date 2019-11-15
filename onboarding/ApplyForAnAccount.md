@@ -1,2 +1,3 @@
-Ready to apply for an account? Fill out the following survey or use a direct link.
-TBD https://github.com/hmdc/heroku-shiny-hmdc-specific/issues/5
+# Apply for an account
+
+Ready to apply for an account? E-mail [support@hmdc.harvard.edu](support@hmdc.harvard.edu).

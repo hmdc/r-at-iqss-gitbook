@@ -1,6 +1,6 @@
 # Using Routes in Shiny
 
-In web applications, a **route** is the absolute path after the hostname.
+In web applications, a **route** is the relative path after the hostname.
 
 In ```https://www.example.com/a/b/c```, the route is ```/a/b/c```.
 
