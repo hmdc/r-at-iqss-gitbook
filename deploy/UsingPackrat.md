@@ -15,25 +15,9 @@ cd heroku-docker-r-example-app
 R
 ```
 
-In the R console, run
+In the R console, run the following:
 
 ```R
-R version 3.6.1 (2019-07-05) -- "Action of the Toes"
-Copyright (C) 2019 The R Foundation for Statistical Computing
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
-
-R is free software and comes with ABSOLUTELY NO WARRANTY.
-You are welcome to redistribute it under certain conditions.
-Type 'license()' or 'licence()' for distribution details.
-
-R is a collaborative project with many contributors.
-Type 'contributors()' for more information and
-'citation()' on how to cite R or R packages in publications.
-
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
-
 > install.packages("packrat")
 trying URL 'http://cran.cnr.berkeley.edu/bin/macosx/el-capitan/contrib/3.6/packrat_0.5.0.tgz'
 Content type 'application/x-gzip' length 456629 bytes (445 KB)
@@ -54,12 +38,94 @@ Adding these packages to packrat:
     Rcpp          1.0.3
     assertthat    0.2.1
     backports     1.1.5
+    ...
+    ...
+
+Initialization complete!
+Packrat mode on. Using library in directory:
+- "~/projects/heroku-docker-r-example-app/packrat/lib"
+
 ```
 
-After your project's dependencies are installed, run the following from the same R console
+After your project's dependencies are installed, your project's dependencies will be saved to the file ```packrat/packrat.lock```
+
+## Installing new packages to the Packrat bundle
+
+During the course of application development, you may need to add new libraries.
+If you want to install a library and use it in your application, first, run R
+and install the library per usual, then create a new packrat snapshot. This will update ```packrat/packrat.lock``` with the new library.
+
+Perform the same process if upgrading a package.
 
 ```R
-packrat::snapshot()
+> library(packrat)
+> install.packages("ggplot2")
+> packrat::snapshot()
 ```
 
-to save your project's dependencies to the file ```packrat/packrat.lock```
+## Restoring installed packages
+
+If you've downloaded your project onto a completely new machine, you can restore all the required dependencies by open your project's directory, executing R and running:
+
+```R
+install.packages("packrat")
+library(packrat)
+packrat::restore()
+```
+
+The ```install.packages("packrat")``` is optional if Packrat is already installed.
+
+## Using .gitignore
+You *must* have a proper .gitignore file within your project. Packrat downloads tarballs (compressed folders) of all your required libraries and places them in the ```packrat``` sub-directory of your project, check it out:
+
+```bash
+bash-3.2$ find  packrat/lib/x86_64-apple-darwin15.6.0/3.6.1 -type d -maxdepth 1
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/packrat
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/glue
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/pkgconfig
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/htmltools
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/jsonlite
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/plogr
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/utf8
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/shiny
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/rlang
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/vctrs
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/digest
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/tibble
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/magrittr
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/crayon
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/tidyselect
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/zeallot
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/cli
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/promises
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/R6
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/pillar
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/xtable
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/assertthat
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/backports
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/fastmap
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/httpuv
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/BH
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/purrr
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/mime
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/later
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/dplyr
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/sourcetools
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/ellipsis
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/fansi
+packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/Rcpp
+```
+
+None of this should be committed or pushed to GitHub as our Shiny toolchain will look at ```packrat.lock``` and download, install, and clean up all your required libraries upon deploy.
+
+Make sure you have a .gitignore in your repsitory that looks like this
+
+```bash
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+packrat/lib*
+packrat/src
+```
