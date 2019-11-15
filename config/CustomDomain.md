@@ -29,13 +29,14 @@ Now, you're ready to configure your custom domain.
 
 Underneath the *Configure SSL* button, click **Add domain**.
 
-* Enter your custom domain or HMDC sub-domain
+* Enter your custom domain or HMDC sub-domain and click **Next**.
 
 ![Enter your domain name](../images/enter-your-domain.png)
 
 * Heroku will return a new hostname for your app. Use this hostname in the next section. If you entered an HMDC sub-domain, provide this custom domain to support and skip the next section.
 
 ![Your new DNS target for CNAME](../images/return-dns-target.png)
+
 ![Copy the returned DNS target to the clipboard](../images/copy-dns-target.png)
 
 ## Adding a DNS CNAME entry
