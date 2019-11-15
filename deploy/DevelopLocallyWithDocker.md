@@ -18,7 +18,7 @@ docker build -t my-local-heroku-docker-r-example-app .
 ## Running your application docker image
 Once completed, you can run the docker image you produced:
 
-```
+```bash
 docker run -p 8080:8080 -e PORT=8080 my-local-heroku-docker-r-example-app:latest
 ```
 
@@ -26,10 +26,10 @@ This will run your Shiny application on port 8080. You may need to click *Allow*
 
 If you're already using port 8080 or want to use a different port, substitute 8080 throughout the entire command with a different port number, except for ports 12000 to 13000 which are reserved for R threads within the container.
 
-```
+```bash
 docker run -p 11000:11000 -e PORT=11000 my-local-heroku-docker-r-example-app:latest
 ```
 
 ## Viewing in the browser
 
-Go to [http://localhost:8080](http://localhost:8080) and you should see your application.
+Go to [http://localhost:8080](http://localhost:8080)     and you should see your application.
