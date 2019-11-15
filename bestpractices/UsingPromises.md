@@ -34,4 +34,6 @@ The following tutorials detail how to develop asynchronous R application.
 
 * [Async programming in R and Shiny](https://medium.com/@joe.cheng/async-programming-in-r-and-shiny-ebe8c5010790)
 
+* [Case study: converting a Shiny app to async](https://rstudio.github.io/promises/articles/casestudy.html)
+
 * [How to use the new R promises package](https://appsilon.com/an-example-of-how-to-use-the-new-r-promises-package/?nabe=4634331497365504:0&utm_referrer=https%3A%2F%2Fwww.google.com%2F)
