@@ -1,8 +1,6 @@
 # Configuration
 
-You can easily customize your R Shiny app if necessary.
-
-You can:
+You can easily customize your R Shiny app deployment if necessary. You can:
 
 * Set up a custom domain for your Shiny application, using Heroku to automatically generatie LetsEncrypt SSL certificates or by bringing your own.
 
