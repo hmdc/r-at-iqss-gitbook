@@ -38,4 +38,4 @@ packrat::snapshot()
 
 Build your application as specified in [Developing locally with Docker](deploy/DevelopLocallyWithDocker.md). rJava will now be installed and enabled for your R appication.
 
-You can always deploy immediately to Heroku which would build your application and produce the same results, but, testing locally first is always preferred. 
+You can always deploy immediately to Heroku which would build your application and produce the same results, but, testing locally first is always preferred.
