@@ -24,7 +24,7 @@ The above will download the CSV in a non-blocking manner, meaning that ```a``` w
 
 Asynchronous programming will execute an instruction, designated as asynchronous by the ```promise``` keyword, in a different thread, without waiting for it's result. You can offload long-running operations to a subsidiary R thread spawned by the promise library.
 
-## Using R promises
+## Asynchronous R documentation
 
 If you're processing CSVs, executing long-running code in your R Shiny app, you **should** use promises to speed up your application.
 
