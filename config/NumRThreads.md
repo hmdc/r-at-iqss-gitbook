@@ -12,10 +12,14 @@ If your application uses a lot of memory, the default of ```CPUs / 2``` may stil
 
 Open the settings tab of your Shiny app on Heroku and click **Reveal Config Vars**.
 
+![Click Reveal config vars under Settings](../images/click-reveal-config-vars.png)
+
 In KEY, enter ```R_NUM_PROCS```.
 
 In VALUE, enter 1.
 
 Then, click **ADD**
 
-Click more and select **Restart all dynos**. This is disruptive - if you only have one dyno, user connections will be severed. When your application is restarted, it will only launch 1 R process.
+Click **More** in the upper-right hand corner and select **Restart all dynos**. This is disruptive - if you only have one dyno, user connections will be severed. When your application is restarted, your application will only launch 1 R process.
+
+![Click Restart all dynos](../images/restart-dynos.png)
