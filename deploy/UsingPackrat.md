@@ -129,3 +129,15 @@ Make sure you have a .gitignore in your repsitory that looks like this
 packrat/lib*
 packrat/src
 ```
+
+## Add Packrat changes to Git
+
+Packrat creates an ```.Rprofile``` in your project directory, as well as ```packrat/packrat.lock``` and ```packrat/packrat.opts```. All these files are essential to speeding up your deploys and managing dependencies.
+
+First, commit and push the .gitignore above.
+
+```git add .gitignore; git commit -m 'Adding R .gitignore' .gitignore```
+
+Now, add and commit everything else.
+
+```git add -A; git commit -a -m 'Adding packrat support files'```
