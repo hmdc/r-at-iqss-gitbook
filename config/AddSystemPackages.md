@@ -14,27 +14,28 @@ Now, build your application as specified in [Developing locally with Docker](dep
 
 ## Example: Adding rJava
 
-This is a more common requirement for R applications. Adding rJava requires not only an Aptfile, but, some R library modifications.
+This is a more common requirement for R applications. As rJava requires some additional configuration commands, we'll be using ```onbuild``` rather than Aptfile which runs arbitrary commands.
 
-First, create an ```Aptfile``` in your repository and add the JRE and JDK.
-
-```bash
-default-jre
-default-jdk
-```
-
-Create another file named ```onbuild``` which looks like this:
+Create a file named ```onbuild``` which looks like this:
 
 ```bash
-#!/bin/sh
-R CMD javareconf
+#!/bin/bash
+# install java jdk
+apt-get update -q
+apt-get install -qy --no-install-recommends openjdk-8-jdk openjdk-8-jre
+rm -rf /var/lib/apt/lists/*
+
+# configure R for Java
+R CMD javareconf &> /dev/null
 ```
 
-Now, install rJava to your project in R, and take a packrat snapshot.
+Install rJava to your project in R, and take a packrat snapshot.
 
 ```R
 install.packages("rJava")
 packrat::snapshot()
 ```
 
-Now, build your application as specified in [Developing locally with Docker](deploy/DevelopLocallyWithDocker.md). rJava will now be installed and enabled for your R appication.
+Build your application as specified in [Developing locally with Docker](deploy/DevelopLocallyWithDocker.md). rJava will now be installed and enabled for your R appication.
+
+You can always deploy immediately to Heroku which would build your application and produce the same results, but, testing locally first is always preferred. 
