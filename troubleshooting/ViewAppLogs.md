@@ -15,7 +15,7 @@ Open your application in the Heroku dashboard, click **More** and then **View Lo
 
 ![Click More, View Logs](../images/click-more-view-logs.png)
 
-![View your logs]()../images/view-logs.png)
+![View your logs](../images/view-logs.png)
 
 ## Common log entries
 
